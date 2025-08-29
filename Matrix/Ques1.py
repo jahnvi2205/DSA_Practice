@@ -23,3 +23,6 @@ def spirallyTraverse(self, mat):
                 left+= 1
             
         return output
+
+
+3,6,7,9

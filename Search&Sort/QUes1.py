@@ -23,3 +23,5 @@ def find_occur(self,arr,target, search_first):
         last= self.find_occur(arr,x,False)
         return [first,last]
         
+
+6
