@@ -24,4 +24,4 @@ def find_occur(self,arr,target, search_first):
         return [first,last]
         
 
-6
+# Only search,sorting,graphs ke *named* algo IMP!!
