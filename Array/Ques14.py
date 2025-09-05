@@ -1,5 +1,5 @@
 def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        intervals.sort(key=lambda x:x[0])
+        intervals.sort()   # intervals.sort(key=lambda x:x[0]) __by_default__
         prev=intervals[0]
         ans=[] 
 
