@@ -12,3 +12,6 @@
                 else:
                     right -=1
         return False
+
+
+        # dictionary??

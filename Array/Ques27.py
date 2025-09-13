@@ -1,3 +1,5 @@
+# sort both, check if max(A)<min(B) yes:False,   no:loops
+
 from collections import Counter
  def isSubset(self, a, b):
     count_a = Counter(a)
