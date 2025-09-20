@@ -8,5 +8,3 @@ def print_all(input,output):
 
     print_all(input[1:],output)
     print_all(input[1:],output+input[0])
-    
-
