@@ -9,7 +9,6 @@ def remove(self, s, index, prev, result):
         
             
     def removeConsecutiveCharacter(self, s):
-        # code here
         if not s:
             return None
         return self.remove(s,0, None, [])
