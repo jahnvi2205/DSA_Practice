@@ -1,0 +1,35 @@
+def reverseKGroup(head, k):
+    if not head or k == 1:
+        return head
+
+    curr = head
+    new_head = None
+    prev_group_tail = None
+
+    while curr:
+        group_head = curr
+        prev = None
+        count = 0
+
+        while curr and count < k:
+            nxt = curr.next
+            curr.next = prev
+            curr.prev = nxt
+            prev = curr
+            curr = nxt
+            count += 1
+
+        if not new_head:
+            new_head = prev
+
+        if prev_group_tail:
+            prev_group_tail.next = prev
+            prev.prev = prev_group_tail
+
+        group_head.next = curr
+        if curr:
+            curr.prev = group_head
+
+        prev_group_tail = group_head
+
+    return new_head
