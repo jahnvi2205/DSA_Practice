@@ -1,7 +1,6 @@
 def inorder_recurse(node):
     if not node:
         return
-    
     inorder_recurse(node.left)
     print(node.data, end=" ")
     inorder_recurse(node.right)
@@ -23,5 +22,3 @@ def inorder_iterative(root):
         
         # Move to right subtree
         curr = curr.right
-
-
